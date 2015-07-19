@@ -1,0 +1,28 @@
+<div class='wrapper'>
+	<div class='below'>
+		<form action="<?php echo $url;?>" id="wordpress-link-builder" method="post">
+			<div class="input_fields_wrap">
+<?php
+				if ($options) {
+					$cssPrefix = 'festi-link-builder-';
+					$hideRemoveButton = (count($options['linkbuilder']) <= 1) ? $cssPrefix.'hide' : '';
+					
+					foreach ($options['linkbuilder'] as $key => $item) {
+?>
+						<div class="container">
+							<input class="LinkbuilderForWords" type="text" name="linkbuilder[<?php echo $key; ?>][word]" value="<?php echo $item['word']?>" placeholder="enter keyword" />
+							<input class="LinkbuilderForLinks" type="text" name="linkbuilder[<?php echo $key; ?>][link]" value="<?php echo $item['link'];?>" placeholder="enter url" />
+							<a class="delete_div_button <?php $hideRemoveButton; ?>" name="<?php echo $key;?>" href="#">delete</a>
+						</div>
+<?php
+					}
+				}
+?>
+			</div>
+		</form>
+	</div>
+</div>
+<form>
+	<input type="submit" form="wordpress-link-builder" value="save" class="save"></br>
+	<a class="add_field_button" href="#">Add More Fields</a></br>
+</form>

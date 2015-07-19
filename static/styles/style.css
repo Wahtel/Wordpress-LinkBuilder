@@ -1,0 +1,43 @@
+.festi-link-builder-hide
+{
+	display: none;
+}
+.save
+{
+	background: #2ea2cc;
+	border-color: #fff;
+	height: 28px;
+	padding: 0 10px 1px;
+	border-width: 1px;
+	color: #fff;
+	width: 100px;
+}
+.error
+{
+	border: 1px solid red !important;
+}
+
+.wrapper
+{
+	width: 450px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	clear: both;
+	border: 3px solid #E8E8E8;
+}
+
+.below
+{
+	margin-left: 35px;
+	min-height: 100px;
+}
+
+.LinkbuilderForWords
+{
+	border-radius: 5px;	
+}
+
+.LinkbuilderForLinks
+{
+	border-radius: 5px;	
+}
